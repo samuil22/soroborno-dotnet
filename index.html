@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>স্বরবর্ণ ডট নেট (Soroborno Dot Net) | দ্রুত নিরবচ্ছিন্ন ইন্টারনেট - চট্টগ্রাম</title>
+    <meta name="description" content="বিশ্বস্ততায় এক ধাপ এগিয়ে দ্রুত নিরবচ্ছিন্ন ইন্টারনেট! স্বরবর্ণ ডট নেট চট্টগ্রামের সেরা ব্রডব্যান্ড ইন্টারনেট সেবা প্রদানকারী প্রতিষ্ঠান।">
+    
+    <!-- Google Fonts: Hind Siliguri & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind Config for Custom Brand Colors & Fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Hind Siliguri"', '"Inter"', 'sans-serif'],
+                        eng: ['"Inter"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            teal: '#00695C',
+                            tealLight: '#00796B',
+                            cyan: '#0288D1',
+                            navy: '#0A192F',
+                            navyLight: '#112240',
+                            amber: '#FBC02D',
+                            amberHover: '#F9A825',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom subtle animations and scrollbars */
+        body {
+            font-family: 'Hind Siliguri', 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .font-eng {
+            font-family: 'Inter', sans-serif;
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); opacity: 0.7; }
+            70% { transform: scale(1.15); opacity: 0; }
+            100% { transform: scale(1.15); opacity: 0; }
+        }
+        .wifi-pulse {
+            animation: pulse-ring 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        .hero-pattern {
+            background-color: #0A192F;
+            background-image: 
+                radial-gradient(at 85% 15%, rgba(2, 136, 209, 0.25) 0px, transparent 50%),
+                radial-gradient(at 15% 85%, rgba(0, 121, 107, 0.3) 0px, transparent 50%);
+        }
+        /* Custom scrollbar for Admin Modal */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #00796B;
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-amber selection:text-brand-navy">
+
+    <!-- ==================== 1. STICKY NAVBAR ==================== -->
+    <header class="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo (Custom SVG Wi-Fi + 'S' / 'স্ব' Motif) -->
+                <a href="#home" class="flex items-center gap-3 group focus:outline-none">
+                    <div class="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-brand-teal via-brand-tealLight to-brand-cyan flex items-center justify-center shadow-md group-hover:shadow-lg transition-all">
+                        <svg class="w-8 h-8 text-white" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Outer Wi-Fi Arc -->
+                            <path d="M8 18C16.8366 10.6667 31.1634 10.6667 40 18" stroke="#FBC02D" stroke-width="3.5" stroke-linecap="round"/>
+                            <!-- Middle Wi-Fi Arc -->
+                            <path d="M13.5 23.5C19.299 18.5 28.701 18.5 34.5 23.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                            <!-- Stylized S / Sworoborno Curve -->
+                            <path d="M27.5 27.5C27.5 25.5 25.5 24.5 23.5 24.5C21.2 24.5 19.5 25.8 19.5 27.6C19.5 29.5 21.5 30.2 24 30.8C26.5 31.4 28.5 32.3 28.5 34.4C28.5 36.5 26.5 38 23.8 38C21.2 38 19.2 36.8 19 35" stroke="white" stroke-width="3.2" stroke-linecap="round"/>
+                            <circle cx="24" cy="41.5" r="2" fill="#FBC02D"/>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl sm:text-2xl font-bold tracking-tight text-brand-navy leading-none">
+                            স্বরবর্ণ <span class="text-brand-tealLight">ডট নেট</span>
+                        </span>
+                        <span class="font-eng text-[11px] font-bold tracking-widest text-brand-cyan uppercase mt-1">
+                            SOROBORNO DOT NET
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-7 font-medium text-slate-700">
+                    <a href="#home" class="hover:text-brand-tealLight transition-colors py-2">হোম</a>
+                    <a href="#packages" class="hover:text-brand-tealLight transition-colors py-2">প্যাকেজসমূহ</a>
+                    <a href="#coverage" class="hover:text-brand-tealLight transition-colors py-2">কভারেজ এরিয়া</a>
+                    <a href="#payment" class="hover:text-brand-tealLight transition-colors py-2">বিল পেমেন্ট</a>
+                    <a href="#support" class="hover:text-brand-tealLight transition-colors py-2">কাস্টমার সাপোর্ট</a>
+                </nav>
+
+                <!-- Action Buttons (Admin Demo + Quick Connect) -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <button onclick="openAdminModal()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-brand-navy hover:bg-brand-navyLight text-brand-amber font-semibold text-sm shadow-sm hover:shadow transition-all cursor-pointer">
+                        <i class="fa-solid fa-sliders"></i>
+                        <span>Admin Demo</span>
+                    </button>
+                    <button onclick="openConnectionModal('')" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-teal to-brand-cyan hover:opacity-95 text-white font-semibold text-sm shadow-md hover:shadow-lg transition-all cursor-pointer">
+                        <i class="fa-solid fa-bolt text-brand-amber"></i>
+                        <span>সংযোগ নিন</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center gap-2 lg:hidden">
+                    <button onclick="openAdminModal()" class="sm:hidden inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-brand-navy text-brand-amber font-semibold text-xs">
+                        <i class="fa-solid fa-sliders"></i> Admin
+                    </button>
+                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu" class="p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 px-4 pt-3 pb-5 space-y-2 shadow-lg">
+            <a href="#home" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-base font-medium text-slate-700 hover:bg-teal-50 hover:text-brand-teal">হোম</a>
+            <a href="#packages" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-base font-medium text-slate-700 hover:bg-teal-50 hover:text-brand-teal">প্যাকেজসমূহ</a>
+            <a href="#coverage" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-base font-medium text-slate-700 hover:bg-teal-50 hover:text-brand-teal">কভারেজ এরিয়া</a>
+            <a href="#payment" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-base font-medium text-slate-700 hover:bg-teal-50 hover:text-brand-teal">বিল পেমেন্ট</a>
+            <a href="#support" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-base font-medium text-slate-700 hover:bg-teal-50 hover:text-brand-teal">কাস্টমার সাপোর্ট</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <button onclick="toggleMobileMenu(); openConnectionModal('');" class="w-full py-3 rounded-xl bg-gradient-to-r from-brand-teal to-brand-cyan text-white font-semibold text-center shadow">
+                    নতুন সংযোগ নিন
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section id="home" class="hero-pattern relative overflow-hidden text-white pt-12 pb-20 lg:pt-20 lg:pb-28">
+        <!-- Decorative Grid Overlay -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#38bdf8 1px, transparent 1px); background-size: 28px 28px;"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 border border-white/15 backdrop-blur-sm">
+                        <span class="w-2.5 h-2.5 rounded-full bg-brand-amber animate-ping"></span>
+                        <span class="font-eng text-xs sm:text-sm font-semibold tracking-wider text-brand-amber uppercase">
+                            Fast Internet, Better Life • Chattogram
+                        </span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-[54px] font-bold leading-tight tracking-tight">
+                        বিশ্বস্ততায় এক ধাপ এগিয়ে <br class="hidden sm:block">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-amber via-yellow-300 to-cyan-300">
+                            দ্রুত নিরবচ্ছিন্ন ইন্টারনেট!
+                        </span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        বাফারলেস <span class="font-eng font-semibold text-white">BDIX</span> স্পিড, ক্রিস্টাল ক্লিয়ার <span class="font-eng font-semibold text-white">4K</span> স্ট্রিমিং, লো-পিং অনলাইন গেমিং এবং চট্টগ্রামের প্রতিটি প্রান্তে ২৪/৭ লোকাল টেকনিক্যাল সাপোর্ট নিয়ে স্বরবর্ণ ডট নেট আছে আপনার পাশে।
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <button onclick="openConnectionModal('')" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-brand-amber hover:bg-brand-amberHover text-brand-navy font-bold text-lg shadow-lg shadow-amber-500/20 hover:shadow-amber-500/40 transition-all flex items-center justify-center gap-2.5 cursor-pointer">
+                            <span>নতুন সংযোগ নিন</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <a href="#packages" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold text-lg transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-gauge-high text-cyan-400"></i>
+                            <span>প্যাকেজসমূহ দেখুন</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust & Speed Metrics -->
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 max-w-xl mx-auto lg:mx-0">
+                        <div>
+                            <div class="font-eng text-2xl sm:text-3xl font-extrabold text-brand-amber">99.9%</div>
+                            <div class="text-xs sm:text-sm text-slate-300">নেটওয়ার্ক আপটাইম</div>
+                        </div>
+                        <div>
+                            <div class="font-eng text-2xl sm:text-3xl font-extrabold text-cyan-400">100 Mbps</div>
+                            <div class="text-xs sm:text-sm text-slate-300">সুপার ফাস্ট BDIX</div>
+                        </div>
+                        <div>
+                            <div class="font-eng text-2xl sm:text-3xl font-extrabold text-emerald-400">24/7</div>
+                            <div class="text-xs sm:text-sm text-slate-300">চট্টগ্রাম লোকাল সাপোর্ট</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual Card (Interactive Speed & Fiber Illustration) -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md">
+                        <!-- Glow Effect -->
+                        <div class="absolute -inset-2 rounded-3xl bg-gradient-to-r from-brand-tealLight via-brand-cyan to-brand-amber opacity-30 blur-xl"></div>
+                        
+                        <div class="relative bg-brand-navyLight/90 border border-white/15 rounded-3xl p-6 sm:p-8 backdrop-blur-md shadow-2xl">
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                                        <i class="fa-solid fa-tower-broadcast text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-400">নেটওয়ার্ক স্ট্যাটাস</p>
+                                        <p class="text-sm font-bold text-emerald-400 flex items-center gap-1.5">
+                                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> অপটিক্যাল ফাইবার সক্রিয়
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="font-eng text-xs font-bold px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
+                                    GPON / XPON
+                                </span>
+                            </div>
+
+                            <!-- Simulated Speed Gauge -->
+                            <div class="bg-brand-navy rounded-2xl p-6 text-center border border-white/10 mb-6 relative overflow-hidden">
+                                <div class="relative w-24 h-24 mx-auto mb-3 flex items-center justify-center">
+                                    <div class="absolute inset-0 rounded-full bg-brand-cyan/30 wifi-pulse"></div>
+                                    <div class="relative w-20 h-20 rounded-full bg-gradient-to-br from-brand-teal to-brand-cyan flex items-center justify-center shadow-lg">
+                                        <i class="fa-solid fa-wifi text-3xl text-white"></i>
+                                    </div>
+                                </div>
+                                <div class="font-eng text-3xl font-extrabold text-white tracking-tight">
+                                    ULTRA <span class="text-brand-amber">FIBER</span>
+                                </div>
+                                <p class="text-xs text-slate-400 mt-1">বাফারলেস YouTube, Facebook ও BDIX সার্ভার</p>
+                            </div>
+
+                            <!-- Quick Feature Pills -->
+                            <div class="grid grid-cols-2 gap-3 text-xs sm:text-sm">
+                                <div class="flex items-center gap-2.5 bg-white/5 p-3 rounded-xl border border-white/5">
+                                    <i class="fa-solid fa-tv text-brand-amber"></i>
+                                    <span>HD Live TV ও FTP</span>
+                                </div>
+                                <div class="flex items-center gap-2.5 bg-white/5 p-3 rounded-xl border border-white/5">
+                                    <i class="fa-solid fa-gamepad text-cyan-400"></i>
+                                    <span>লো-পিং গেমিং</span>
+                                </div>
+                                <div class="flex items-center gap-2.5 bg-white/5 p-3 rounded-xl border border-white/5">
+                                    <i class="fa-solid fa-shield-halved text-emerald-400"></i>
+                                    <span>Real IP সুবিধা</span>
+                                </div>
+                                <div class="flex items-center gap-2.5 bg-white/5 p-3 rounded-xl border border-white/5">
+                                    <i class="fa-solid fa-headset text-brand-amber"></i>
+                                    <span>দ্রুত হোম সাপোর্ট</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 3. INTERNET PACKAGES & PRICING ==================== -->
+    <section id="packages" class="py-16 sm:py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Heading -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-teal-100 text-brand-teal font-semibold text-sm mb-3">
+                    সাশ্রয়ী ইন্টারনেট প্যাকেজ
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-brand-navy mb-4">
+                    আপনার প্রয়োজন অনুযায়ী সেরা প্যাকেজটি বেছে নিন
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    প্রতিটি প্যাকেজের সাথে পাচ্ছেন হাই-স্পিড <span class="font-eng font-semibold text-brand-teal">BDIX</span>, বাফারলেস <span class="font-eng font-semibold text-brand-teal">FTP</span> মুভি সার্ভার এবং <span class="font-eng font-semibold text-brand-teal">Live TV</span> অ্যাক্সেস।
+                </p>
+
+                <!-- Interactive Category Filter Tabs -->
+                <div class="inline-flex p-1.5 bg-slate-200/80 rounded-2xl mt-8">
+                    <button id="filter-all" onclick="filterPackages('all')" class="pkg-filter-btn px-5 py-2.5 rounded-xl text-sm font-bold bg-brand-teal text-white shadow transition-all cursor-pointer">
+                        সকল প্যাকেজ
+                    </button>
+                    <button id="filter-home" onclick="filterPackages('home')" class="pkg-filter-btn px-5 py-2.5 rounded-xl text-sm font-bold text-slate-700 hover:text-brand-navy transition-all cursor-pointer">
+                        হোম ইউজার (Home)
+                    </button>
+                    <button id="filter-corporate" onclick="filterPackages('corporate')" class="pkg-filter-btn px-5 py-2.5 rounded-xl text-sm font-bold text-slate-700 hover:text-brand-navy transition-all cursor-pointer">
+                        কর্পোরেট ও অফিস (Corporate)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dynamic Packages Grid (Populated via JS & LocalStorage) -->
+            <div id="packages-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cards rendered dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 4. COVERAGE AREA SECTION ==================== -->
+    <section id="coverage" class="py-16 sm:py-24 bg-white border-y border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- Left Checker Box -->
+                <div class="lg:col-span-5 bg-gradient-to-br from-brand-navy via-brand-navyLight to-brand-teal text-white rounded-3xl p-7 sm:p-9 shadow-xl">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-brand-amber text-xs font-semibold mb-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>চট্টগ্রাম সিটি কভারেজ</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-3">
+                        আপনার এলাকা চেক করুন
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base mb-6 leading-relaxed">
+                        চট্টগ্রামের প্রধান আবাসিক ও বাণিজ্যিক এলাকাগুলোতে আমাদের অপটিক্যাল ফাইবার নেটওয়ার্ক বিস্তৃত। নিচে আপনার এলাকার নাম লিখে যাচাই করুন।
+                    </p>
+
+                    <!-- Area Search Input -->
+                    <div class="space-y-3">
+                        <div class="relative">
+                            <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                            <input type="text" id="area-search-input" onkeyup="filterAreas()" placeholder="যেমন: আগ্রাবাদ, জিইসি, হালিশহর..." 
+                                class="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-white text-slate-900 placeholder-slate-400 font-medium focus:outline-none focus:ring-4 focus:ring-brand-amber/40">
+                        </div>
+                        <button onclick="checkQuickArea()" class="w-full py-3.5 rounded-2xl bg-brand-amber hover:bg-brand-amberHover text-brand-navy font-bold transition-all shadow-md cursor-pointer">
+                            কভারেজ যাচাই করুন
+                        </button>
+                    </div>
+
+                    <!-- Instant Search Feedback Banner -->
+                    <div id="area-check-result" class="hidden mt-5 p-4 rounded-2xl bg-white/10 border border-white/15 text-sm">
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-white/15 flex items-center gap-3 text-xs sm:text-sm text-slate-200">
+                        <i class="fa-solid fa-circle-info text-brand-amber text-lg"></i>
+                        <span>তালিকায় আপনার এলাকা না থাকলে কল করুন, নতুন লাইন স্থাপনের সুবিধা রয়েছে।</span>
+                    </div>
+                </div>
+
+                <!-- Right Dynamic Coverage Grid -->
+                <div class="lg:col-span-7">
+                    <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+                        <div>
+                            <h3 class="text-xl sm:text-2xl font-bold text-brand-navy">সক্রিয় ফাইবার জোনসমূহ (চট্টগ্রাম)</h3>
+                            <p class="text-sm text-slate-500">তাৎক্ষণিক সংযোগ ও ২৪/৭ টেকনিক্যাল টিম প্রস্তুত</p>
+                        </div>
+                        <span id="active-zone-count" class="px-3.5 py-1.5 rounded-xl bg-emerald-50 text-emerald-700 font-bold text-sm border border-emerald-200">
+                            ৯টি জোন সক্রিয়
+                        </span>
+                    </div>
+
+                    <div id="coverage-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                        <!-- Coverage cards rendered via JS -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 5. ONLINE BILL PAYMENT GUIDE ==================== -->
+    <section id="payment" class="py-16 sm:py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-cyan-100 text-brand-cyan font-semibold text-sm mb-3">
+                    সহজ ও নিরাপদ পেমেন্ট
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-brand-navy mb-4">
+                    ঘরে বসেই অনলাইনে মাসিক বিল পরিশোধ করুন
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    বিকাশ, নগদ, রকেট অথবা ব্যাংক ট্রান্সফারের মাধ্যমে মাত্র ১ মিনিটে বিল পরিশোধ করুন। পেমেন্টের সময় রেফারেন্সে অবশ্যই আপনার <span class="font-eng font-bold text-brand-navy">Customer ID</span> দিন।
+                </p>
+            </div>
+
+            <!-- Payment Methods Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <!-- bKash -->
+                <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3.5 py-1 rounded-xl bg-pink-600 text-white font-eng font-bold text-sm">bKash</span>
+                            <span class="text-xs font-semibold text-pink-600 bg-pink-50 px-2.5 py-1 rounded-lg">Merchant / Pay Bill</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mb-1">বিকাশ মার্চেন্ট নম্বর:</p>
+                        <div class="flex items-center justify-between bg-slate-50 p-3 rounded-xl border border-slate-200 mb-4">
+                            <span class="font-eng font-bold text-base text-slate-800">01811-000001</span>
+                            <button onclick="copyText('01811000001', 'বিকাশ নম্বর')" class="text-pink-600 hover:text-pink-700 text-sm font-semibold cursor-pointer" title="কপি করুন">
+                                <i class="fa-regular fa-copy"></i> কপি
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Mock QR Visual -->
+                    <div class="bg-pink-50/70 rounded-2xl p-3 flex items-center gap-3 border border-pink-100">
+                        <div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center text-pink-600 border border-pink-200 shrink-0">
+                            <i class="fa-solid fa-qrcode text-2xl"></i>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-snug">bKash অ্যাপ থেকে <strong>Make Payment</strong> সিলেক্ট করে রেফারেন্সে Customer ID দিন।</p>
+                    </div>
+                </div>
+
+                <!-- Nagad -->
+                <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3.5 py-1 rounded-xl bg-orange-600 text-white font-eng font-bold text-sm">Nagad</span>
+                            <span class="text-xs font-semibold text-orange-600 bg-orange-50 px-2.5 py-1 rounded-lg">Merchant Pay</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mb-1">নগদ মার্চেন্ট নম্বর:</p>
+                        <div class="flex items-center justify-between bg-slate-50 p-3 rounded-xl border border-slate-200 mb-4">
+                            <span class="font-eng font-bold text-base text-slate-800">01811-000002</span>
+                            <button onclick="copyText('01811000002', 'নগদ নম্বর')" class="text-orange-600 hover:text-orange-700 text-sm font-semibold cursor-pointer" title="কপি করুন">
+                                <i class="fa-regular fa-copy"></i> কপি
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-orange-50/70 rounded-2xl p-3 flex items-center gap-3 border border-orange-100">
+                        <div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center text-orange-600 border border-orange-200 shrink-0">
+                            <i class="fa-solid fa-qrcode text-2xl"></i>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-snug">Nagad অ্যাপ থেকে <strong>Merchant Pay</strong> অপশনে গিয়ে বিল পরিশোধ করুন।</p>
+                    </div>
+                </div>
+
+                <!-- Rocket -->
+                <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3.5 py-1 rounded-xl bg-purple-700 text-white font-eng font-bold text-sm">Rocket</span>
+                            <span class="text-xs font-semibold text-purple-700 bg-purple-50 px-2.5 py-1 rounded-lg">Bill Pay / Biller</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mb-1">রকেট মার্চেন্ট / বিলার আইডি:</p>
+                        <div class="flex items-center justify-between bg-slate-50 p-3 rounded-xl border border-slate-200 mb-4">
+                            <span class="font-eng font-bold text-base text-slate-800">01811-0000039</span>
+                            <button onclick="copyText('018110000039', 'রকেট নম্বর')" class="text-purple-700 hover:text-purple-800 text-sm font-semibold cursor-pointer" title="কপি করুন">
+                                <i class="fa-regular fa-copy"></i> কপি
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-purple-50/70 rounded-2xl p-3 flex items-center gap-3 border border-purple-100">
+                        <div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center text-purple-700 border border-purple-200 shrink-0">
+                            <i class="fa-solid fa-mobile-screen-button text-2xl"></i>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-snug">রকেট অ্যাপ বা <span class="font-eng">*322#</span> ডায়াল করে রেফারেন্সে Customer ID লিখুন।</p>
+                    </div>
+                </div>
+
+                <!-- Bank Transfer -->
+                <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3.5 py-1 rounded-xl bg-brand-teal text-white font-eng font-bold text-sm">Bank / NPSB</span>
+                            <span class="text-xs font-semibold text-brand-teal bg-teal-50 px-2.5 py-1 rounded-lg">Dutch-Bangla / City</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mb-1">অ্যাকাউন্ট নম্বর (Soroborno Dot Net):</p>
+                        <div class="flex items-center justify-between bg-slate-50 p-3 rounded-xl border border-slate-200 mb-4">
+                            <span class="font-eng font-bold text-sm text-slate-800">105.110.0045892</span>
+                            <button onclick="copyText('1051100045892', 'ব্যাংক অ্যাকাউন্ট নম্বর')" class="text-brand-teal hover:text-teal-800 text-sm font-semibold cursor-pointer" title="কপি করুন">
+                                <i class="fa-regular fa-copy"></i> কপি
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-teal-50/70 rounded-2xl p-3 flex items-center gap-3 border border-teal-100">
+                        <div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center text-brand-teal border border-teal-200 shrink-0">
+                            <i class="fa-solid fa-building-columns text-2xl"></i>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-snug">আগ্রাবাদ শাখা, চট্টগ্রাম। নোট/রেফারেন্সে আপনার আইডি উল্লেখ করুন।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 Simple Steps Banner -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+                <h3 class="text-lg sm:text-xl font-bold text-brand-navy mb-6 text-center">বিল পরিশোধের ৩টি সহজ ধাপ</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-2xl bg-brand-teal text-white font-eng font-bold flex items-center justify-center shrink-0">1</div>
+                        <div>
+                            <h4 class="font-bold text-slate-800">পেমেন্ট মাধ্যম নির্বাচন</h4>
+                            <p class="text-sm text-slate-600 mt-1">আপনার পছন্দের bKash, Nagad বা Rocket অ্যাপে প্রবেশ করে Make Payment / Bill Pay বেছে নিন।</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-2xl bg-brand-cyan text-white font-eng font-bold flex items-center justify-center shrink-0">2</div>
+                        <div>
+                            <h4 class="font-bold text-slate-800">Customer ID রেফারেন্স দিন</h4>
+                            <p class="text-sm text-slate-600 mt-1">প্যাকেজের নির্ধারিত টাকা লিখুন এবং Reference ঘরে আপনার ইউনিক <span class="font-eng font-semibold">SDN-XXXX</span> আইডি দিন।</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-2xl bg-brand-amber text-brand-navy font-eng font-bold flex items-center justify-center shrink-0">3</div>
+                        <div>
+                            <h4 class="font-bold text-slate-800">তাৎক্ষণিক অটো-অ্যাক্টিভেশন</h4>
+                            <p class="text-sm text-slate-600 mt-1">পেমেন্ট সম্পন্ন হওয়ার সাথে সাথেই SMS কনফার্মেশন পাবেন এবং সংযোগ সচল থাকবে।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 6. CUSTOMER SUPPORT & CONTACT ==================== -->
+    <section id="support" class="py-16 sm:py-24 bg-white border-t border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left Contact Details -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="inline-block px-4 py-1.5 rounded-full bg-teal-100 text-brand-teal font-semibold text-sm mb-3">
+                            ২৪/৭ কাস্টমার সাপোর্ট
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-brand-navy mb-3">
+                            যেকোনো প্রয়োজনে আমরা আছি আপনার পাশে
+                        </h2>
+                        <p class="text-slate-600">
+                            নতুন সংযোগ নিতে চান কিংবা টেকনিক্যাল কোনো সহায়তার প্রয়োজন? সরাসরি কল করুন অথবা নিচের ফর্মটি পূরণ করুন।
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Hotline -->
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+                            <div class="w-12 h-12 rounded-2xl bg-brand-teal/10 text-brand-teal flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-phone-volume text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold text-slate-500">২৪/৭ হটলাইন ও সাপোর্ট ডেস্ক</p>
+                                <a href="tel:+8801811000000" class="font-eng text-lg font-bold text-brand-navy hover:text-brand-cyan block">+880 1811-000000</a>
+                                <a href="tel:+8801711000000" class="font-eng text-sm font-semibold text-slate-600 hover:text-brand-cyan block">+880 1711-000000 (বিলিং)</a>
+                            </div>
+                        </div>
+
+                        <!-- WhatsApp Quick Chat -->
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-emerald-50/60 border border-emerald-200/80">
+                            <div class="w-12 h-12 rounded-2xl bg-emerald-500 text-white flex items-center justify-center shrink-0">
+                                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold text-emerald-800">হোয়াটসঅ্যাপ লাইভ চ্যাট</p>
+                                <p class="text-sm text-slate-700 mb-2">দ্রুত রিপ্লাই পেতে সরাসরি মেসেজ করুন</p>
+                                <a href="https://wa.me/8801811000000?text=আসসালামু%20আলাইকুম,%20স্বরবর্ণ%20ডট%20নেট%20থেকে%20নতুন%20ইন্টারনেট%20সংযোগ%20সম্পর্কে%20জানতে%20চাই।" target="_blank" rel="noopener noreferrer" 
+                                   class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all">
+                                    <i class="fa-brands fa-whatsapp"></i> WhatsApp-এ চ্যাট করুন
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Office Address -->
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+                            <div class="w-12 h-12 rounded-2xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-building text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold text-slate-500">কর্পোরেট ও কাস্টমার কেয়ার অফিস</p>
+                                <p class="font-bold text-slate-800">স্বরবর্ণ ডট নেট (Soroborno Dot Net)</p>
+                                <p class="text-sm text-slate-600">৩য় তলা, হক টাওয়ার, আগ্রাবাদ বাণিজ্যিক এলাকা (জিইসি ও হালিশহর শাখা অফিসসহ), চট্টগ্রাম-৪১০০।</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Interactive New Connection / Support Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-50 rounded-3xl p-6 sm:p-9 border border-slate-200 shadow-sm">
+                        <h3 class="text-2xl font-bold text-brand-navy mb-2">নতুন সংযোগ অথবা সাপোর্ট আবেদন</h3>
+                        <p class="text-sm text-slate-600 mb-6">আপনার তথ্য দিন, আমাদের প্রতিনিধি আগামী ৩০ মিনিটের মধ্যে আপনার সাথে যোগাযোগ করবেন।</p>
+
+                        <form id="main-request-form" onsubmit="handleFormSubmit(event, 'main')" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-semibold text-slate-700 mb-1.5">আপনার নাম *</label>
+                                    <input type="text" id="req-name" required placeholder="পূর্ণ নাম লিখুন" 
+                                        class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-slate-700 mb-1.5">মোবাইল নম্বর *</label>
+                                    <input type="tel" id="req-phone" required placeholder="01XXXXXXXXX" 
+                                        class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none font-eng">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-semibold text-slate-700 mb-1.5">আবেদনের ধরন</label>
+                                    <select id="req-type" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none">
+                                        <option value="নতুন সংযোগ">নতুন ইন্টারনেট সংযোগ</option>
+                                        <option value="টেকনিক্যাল সাপোর্ট">টেকনিক্যাল সাপোর্ট / লাইন সমস্যা</option>
+                                        <option value="প্যাকেজ পরিবর্তন">প্যাকেজ আপগ্রেড / পরিবর্তন</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-slate-700 mb-1.5">পছন্দের প্যাকেজ</label>
+                                    <select id="req-package" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none">
+                                        <!-- Dynamically populated -->
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1.5">এলাকা ও বিস্তারিত ঠিকানা (চট্টগ্রাম) *</label>
+                                <input type="text" id="req-address" required placeholder="যেমন: বাসা নং-১২, রোড-৪, হালিশহর হাউজিং এস্টেট, চট্টগ্রাম" 
+                                    class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1.5">অতিরিক্ত বার্তা (ঐচ্ছিক)</label>
+                                <textarea id="req-note" rows="2" placeholder="রাউটার প্রয়োজন কিনা বা অন্য কোনো তথ্য থাকলে লিখুন..." 
+                                    class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 outline-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-2xl bg-gradient-to-r from-brand-teal to-brand-cyan hover:opacity-95 text-white font-bold text-base shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>আবেদন জমা দিন</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 8. FOOTER ==================== -->
+    <footer class="bg-brand-navy text-slate-300 pt-16 pb-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+                <!-- Col 1: Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-tealLight to-brand-cyan flex items-center justify-center text-white font-bold">
+                            <i class="fa-solid fa-wifi"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-white leading-none">স্বরবর্ণ ডট নেট</h4>
+                            <span class="font-eng text-[10px] tracking-widest text-brand-amber font-bold uppercase">SOROBORNO DOT NET</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        বিশ্বস্ততায় এক ধাপ এগিয়ে দ্রুত নিরবচ্ছিন্ন ইন্টারনেট! চট্টগ্রামের নির্ভরযোগ্য ব্রডব্যান্ড ও কর্পোরেট ইন্টারনেট সেবাদাতা প্রতিষ্ঠান।
+                    </p>
+                    <div class="flex items-center gap-3 pt-1">
+                        <a href="#support" aria-label="Facebook" class="w-9 h-9 rounded-xl bg-white/10 hover:bg-brand-cyan text-white flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/8801811000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-9 h-9 rounded-xl bg-white/10 hover:bg-emerald-500 text-white flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="#support" aria-label="YouTube" class="w-9 h-9 rounded-xl bg-white/10 hover:bg-red-600 text-white flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h5 class="text-white font-bold text-base mb-4">দ্রুত লিংকসমূহ</h5>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#home" class="hover:text-brand-amber transition-colors">হোম পেজ</a></li>
+                        <li><a href="#packages" class="hover:text-brand-amber transition-colors">ইন্টারনেট প্যাকেজসমূহ</a></li>
+                        <li><a href="#coverage" class="hover:text-brand-amber transition-colors">চট্টগ্রাম কভারেজ এরিয়া</a></li>
+                        <li><a href="#payment" class="hover:text-brand-amber transition-colors">অনলাইন বিল পেমেন্ট গাইড</a></li>
+                        <li><button onclick="openAdminModal()" class="text-brand-amber hover:underline cursor-pointer">অ্যাডমিন প্যানেল ডেমো</button></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Popular Servers / Services -->
+                <div>
+                    <h5 class="text-white font-bold text-base mb-4">আমাদের সেবাসমূহ</h5>
+                    <ul class="space-y-2.5 text-sm">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 text-xs"></i> হোম ব্রডব্যান্ড ইন্টারনেট</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 text-xs"></i> কর্পোরেট ডেডিকেটেড ব্যান্ডউইথ</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 text-xs"></i> বাফারলেস BDIX ও FTP সার্ভার</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 text-xs"></i> IPv6 ও Real IP সাপোর্ট</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 text-xs"></i> সিসিটিভি ও নেটওয়ার্কিং সলিউশন</li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Emergency Contact -->
+                <div>
+                    <h5 class="text-white font-bold text-base mb-4">জরুরি যোগাযোগ</h5>
+                    <p class="text-sm text-slate-400 mb-3">আগ্রাবাদ, জিইসি, হালিশহর ও সমগ্র চট্টগ্রাম মহানগরী।</p>
+                    <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+                        <p class="text-xs text-slate-400">হেল্পলাইন (২৪ ঘণ্টা খোলা)</p>
+                        <p class="font-eng text-lg font-bold text-brand-amber mt-0.5">+880 1811-000000</p>
+                        <p class="font-eng text-xs text-slate-400 mt-1">support@soroborno.net</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-400">
+                <p>© ২০২৬ <span class="text-white font-semibold">স্বরবর্ণ ডট নেট (Soroborno Dot Net)</span>। সর্বস্বত্ব সংরক্ষিত।</p>
+                <p class="font-eng">Fast Internet, Better Life • Chattogram, Bangladesh</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== MODAL 1: QUICK CONNECTION REQUEST ==================== -->
+    <div id="connection-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-brand-navy/75 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative animate-[fadeIn_0.2s_ease-out]">
+            <button onclick="closeConnectionModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="flex items-center gap-3 mb-5">
+                <div class="w-11 h-11 rounded-2xl bg-brand-teal text-white flex items-center justify-center">
+                    <i class="fa-solid fa-wifi"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-brand-navy">নতুন সংযোগের আবেদন</h3>
+                    <p class="text-xs text-slate-500">দ্রুত ইনস্টলেশনের জন্য নিচের তথ্য দিন</p>
+                </div>
+            </div>
+
+            <form onsubmit="handleFormSubmit(event, 'modal')" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">নির্বাচিত প্যাকেজ</label>
+                    <select id="modal-package-select" class="w-full px-4 py-3 rounded-xl bg-teal-50/60 border border-brand-teal/30 font-semibold text-brand-navy outline-none">
+                        <!-- Populated dynamically -->
+                    </select>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">আপনার নাম *</label>
+                        <input type="text" id="modal-name" required placeholder="পূর্ণ নাম" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 outline-none focus:border-brand-teal">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">মোবাইল নম্বর *</label>
+                        <input type="tel" id="modal-phone" required placeholder="01XXXXXXXXX" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 outline-none focus:border-brand-teal font-eng">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">এলাকা ও ঠিকানা (চট্টগ্রাম) *</label>
+                    <input type="text" id="modal-address" required placeholder="যেমন: জিইসি মোড়, নাসিরাবাদ, চট্টগ্রাম" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 outline-none focus:border-brand-teal">
+                </div>
+                <button type="submit" class="w-full py-3.5 rounded-2xl bg-gradient-to-r from-brand-teal to-brand-cyan text-white font-bold shadow-lg hover:opacity-95 transition-all cursor-pointer">
+                    কনফার্ম করুন
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ==================== MODAL 2: INTERACTIVE ADMIN PANEL DEMO ==================== -->
+    <div id="admin-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-2 sm:p-6 bg-brand-navy/80 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl max-w-5xl w-full max-h-[92vh] flex flex-col shadow-2xl overflow-hidden border border-slate-200">
+            
+            <!-- Admin Header -->
+            <div class="bg-brand-navy text-white px-6 py-4 flex items-center justify-between shrink-0">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-brand-amber text-brand-navy flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-user-shield text-lg"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <h3 class="text-lg font-bold">স্বরবর্ণ ডট নেট — অ্যাডমিন প্যানেল</h3>
+                            <span class="font-eng text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">LIVE DEMO</span>
+                        </div>
+                        <p class="text-xs text-slate-300">সহজেই প্যাকেজ, কভারেজ এরিয়া ও কাস্টমার রিকোয়েস্ট ম্যানেজ করুন (Browser Storage-এ সেভ থাকে)</p>
+                    </div>
+                </div>
+                <button onclick="closeAdminModal()" class="w-9 h-9 rounded-xl bg-white/10 hover:bg-white/20 text-white flex items-center justify-center cursor-pointer">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Admin Tabs -->
+            <div class="bg-slate-100 px-6 pt-3 border-b border-slate-200 flex flex-wrap items-center justify-between gap-2 shrink-0">
+                <div class="flex gap-2">
+                    <button onclick="switchAdminTab('packages')" id="tab-btn-packages" class="admin-tab-btn px-4 py-2.5 rounded-t-xl font-bold text-sm bg-white text-brand-teal border-t border-x border-slate-200 cursor-pointer">
+                        <i class="fa-solid fa-box-open mr-1.5"></i> প্যাকেজ ম্যানেজমেন্ট
+                    </button>
+                    <button onclick="switchAdminTab('coverage')" id="tab-btn-coverage" class="admin-tab-btn px-4 py-2.5 rounded-t-xl font-bold text-sm text-slate-600 hover:text-brand-navy cursor-pointer">
+                        <i class="fa-solid fa-map-location-dot mr-1.5"></i> কভারেজ এরিয়া
+                    </button>
+                    <button onclick="switchAdminTab('requests')" id="tab-btn-requests" class="admin-tab-btn px-4 py-2.5 rounded-t-xl font-bold text-sm text-slate-600 hover:text-brand-navy cursor-pointer">
+                        <i class="fa-solid fa-inbox mr-1.5"></i> কাস্টমার আবেদন <span id="admin-req-badge" class="ml-1 px-2 py-0.5 text-xs rounded-full bg-brand-amber text-brand-navy font-eng">0</span>
+                    </button>
+                </div>
+                <button onclick="resetDemoData()" class="text-xs font-semibold text-rose-600 hover:text-rose-700 py-2 cursor-pointer" title="ডিফল্ট ডাটা ফিরিয়ে আনুন">
+                    <i class="fa-solid fa-rotate-left mr-1"></i> রিসেট ডেমো ডাটা
+                </button>
+            </div>
+
+            <!-- Admin Scrollable Body -->
+            <div class="p-6 overflow-y-auto flex-1 bg-slate-50/50">
+                
+                <!-- TAB 1: MANAGE PACKAGES -->
+                <div id="admin-tab-packages" class="space-y-6">
+                    <!-- Add / Edit Package Form -->
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                        <h4 id="admin-pkg-form-title" class="font-bold text-brand-navy mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-plus-circle text-brand-teal"></i> নতুন প্যাকেজ যোগ করুন / এডিট করুন
+                        </h4>
+                        <form id="admin-pkg-form" onsubmit="saveAdminPackage(event)" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3">
+                            <input type="hidden" id="edit-pkg-id">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">প্যাকেজ নাম</label>
+                                <input type="text" id="admin-pkg-name" required placeholder="যেমন: স্টার্টার প্লাস" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">স্পিড (Mbps)</label>
+                                <input type="number" id="admin-pkg-speed" required placeholder="25" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm font-eng">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">মাসিক মূল্য (৳)</label>
+                                <input type="number" id="admin-pkg-price" required placeholder="700" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm font-eng">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">BDIX স্পিড</label>
+                                <input type="text" id="admin-pkg-bdix" required placeholder="100 Mbps" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm font-eng">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">ক্যাটাগরি</label>
+                                <select id="admin-pkg-category" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm">
+                                    <option value="home">Home</option>
+                                    <option value="corporate">Corporate</option>
+                                </select>
+                            </div>
+                            <div class="flex items-end gap-2">
+                                <button type="submit" class="w-full py-2 px-4 rounded-xl bg-brand-teal hover:bg-brand-tealLight text-white font-bold text-sm cursor-pointer">
+                                    সেভ করুন
+                                </button>
+                                <button type="button" id="cancel-edit-btn" onclick="cancelEditPackage()" class="hidden py-2 px-3 rounded-xl bg-slate-200 text-slate-700 font-bold text-sm cursor-pointer">
+                                    বাতিল
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Existing Packages Table -->
+                    <div class="bg-white rounded-2xl border border-slate-200 overflow-x-auto">
+                        <table class="w-full text-left border-collapse text-sm">
+                            <thead>
+                                <tr class="bg-slate-100 text-slate-700 border-b border-slate-200">
+                                    <th class="p-3.5 font-bold">প্যাকেজ</th>
+                                    <th class="p-3.5 font-bold">স্পিড</th>
+                                    <th class="p-3.5 font-bold">মাসিক বিল</th>
+                                    <th class="p-3.5 font-bold">BDIX</th>
+                                    <th class="p-3.5 font-bold">ধরন</th>
+                                    <th class="p-3.5 font-bold text-right">অ্যাকশন</th>
+                                </tr>
+                            </thead>
+                            <tbody id="admin-pkg-table-body" class="divide-y divide-slate-100">
+                                <!-- Rows populated via JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- TAB 2: MANAGE COVERAGE -->
+                <div id="admin-tab-coverage" class="hidden space-y-6">
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                        <h4 class="font-bold text-brand-navy mb-3">নতুন কভারেজ এলাকা যুক্ত করুন</h4>
+                        <form onsubmit="addAdminArea(event)" class="flex flex-col sm:flex-row gap-3">
+                            <input type="text" id="admin-area-name" required placeholder="এলাকার নাম লিখুন (যেমন: অক্সিজেন মোড়)" class="flex-1 px-4 py-2.5 rounded-xl border border-slate-300 text-sm">
+                            <input type="text" id="admin-area-note" required placeholder="সাব-এলাকা (যেমন: বায়েজিদ বোস্তামী রোড)" class="flex-1 px-4 py-2.5 rounded-xl border border-slate-300 text-sm">
+                            <button type="submit" class="px-6 py-2.5 rounded-xl bg-brand-teal text-white font-bold text-sm cursor-pointer">
+                                যুক্ত করুন
+                            </button>
+                        </form>
+                    </div>
+
+                    <div id="admin-area-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                        <!-- Area toggles rendered via JS -->
+                    </div>
+                </div>
+
+                <!-- TAB 3: CUSTOMER REQUESTS -->
+                <div id="admin-tab-requests" class="hidden space-y-4">
+                    <div class="flex items-center justify-between">
+                        <h4 class="font-bold text-brand-navy">নতুন সংযোগ ও সাপোর্ট আবেদনসমূহ</h4>
+                        <span class="text-xs text-slate-500">ওয়েবসাইটের ফর্ম থেকে সাবমিট করা তথ্য এখানে দেখা যাবে</span>
+                    </div>
+                    <div id="admin-requests-list" class="space-y-3">
+                        <!-- Requests rendered via JS -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== TOAST NOTIFICATION ==================== -->
+    <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 max-w-sm w-full pointer-events-none px-4 sm:px-0"></div>
+
+    <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+    <script>
+        // --- 1. DEFAULT DATA (Chattogram ISP Context) ---
+        const DEFAULT_PACKAGES = [
+            {
+                id: 1,
+                name: 'বেসিক স্টার্টার',
+                speed: 15,
+                price: 500,
+                bdix: '50 Mbps',
+                category: 'home',
+                popular: false,
+                features: ['আনলিমিটেড ডাটা (24/7)', 'বাফারলেস BDIX ও FTP সার্ভার', 'HD Live TV অ্যাক্সেস', 'ফাইবার অপটিক সংযোগ']
+            },
+            {
+                id: 2,
+                name: 'স্মার্ট ফ্যামিলি',
+                speed: 25,
+                price: 700,
+                bdix: '80 Mbps',
+                category: 'home',
+                popular: true,
+                features: ['4K YouTube ও Facebook স্ট্রিমিং', 'লো-পিং অনলাইন গেমিং', 'সুপার ফাস্ট BDIX ও FTP', '২৪/৭ চট্টগ্রাম লোকাল সাপোর্ট']
+            },
+            {
+                id: 3,
+                name: 'আল্ট্রা স্পিড',
+                speed: 40,
+                price: 1000,
+                bdix: '100 Mbps',
+                category: 'home',
+                popular: false,
+                features: ['মাল্টি-ডিভাইস স্মুথ পারফরম্যান্স', '100 Mbps BDIX ও মুভি সার্ভার', 'ফ্রি রাউটার কনফিগারেশন', 'প্রায়োরিটি কাস্টমার কেয়ার']
+            },
+            {
+                id: 4,
+                name: 'টার্বো প্রো',
+                speed: 60,
+                price: 1500,
+                bdix: '100 Mbps',
+                category: 'corporate',
+                popular: false,
+                features: ['ছোট অফিস ও ফ্রিল্যান্সারদের সেরা পছন্দ', 'রিয়েল IP (Real IP) সুবিধা', 'ডেডিকেটেড আপলোড ও ডাউনলোড', 'জিরো বাফারিং ভিডিও কনফারেন্স']
+            },
+            {
+                id: 5,
+                name: 'কর্পোরেট এক্সট্রিম',
+                speed: 100,
+                price: 2500,
+                bdix: '100 Mbps+',
+                category: 'corporate',
+                popular: false,
+                features: ['ডেডিকেটেড ফাইবার ব্যাকবোন', 'ফ্রি Real IP ও সিকিউরিটি', '৯৯.৯% আপটাইম গ্যারান্টি', 'তাৎক্ষণিক অন-সাইট ইঞ্জিনিয়ার সাপোর্ট']
+            }
+        ];
+
+        const DEFAULT_AREAS = [
+            { id: 1, name: 'আগ্রাবাদ', note: 'বাণিজ্যিক এলাকা, সিডিএ আবাসিক ও চৌমুহনী', active: true },
+            { id: 2, name: 'জিইসি মোড়', note: 'ওআর নিজাম রোড, পূর্ব নাসিরাবাদ', active: true },
+            { id: 3, name: 'নাসিরাবাদ', note: 'নাসিরাবাদ হাউজিং সোসাইটি ও পলিটেকনিক', active: true },
+            { id: 4, name: 'হালিশহর', note: 'কে-ব্লক, জি-ব্লক, বি-ব্লক ও ছোটপুল', active: true },
+            { id: 5, name: 'চকবাজার', note: 'কাপাসগোলা, চট্টেশ্বরী ও কলেজ রোড', active: true },
+            { id: 6, name: 'বহদ্দারহাট', note: 'চান্দগাঁও আবাসিক ও শমসের পাড়া', active: true },
+            { id: 7, name: 'মুরাদপুর', note: 'বিবিরহাট, পাঁচলাইশ ও সুগন্ধা আবাসিক', active: true },
+            { id: 8, name: 'পতেঙ্গা', note: 'ইপিজেড, স্টিল মিল ও কাটগড় এলাকা', active: true },
+            { id: 9, name: 'খুলশী', note: 'দক্ষিণ খুলশী, জাকির হোসেন রোড ও টাইগারপাস', active: true }
+        ];
+
+        const DEFAULT_REQUESTS = [
+            {
+                id: 101,
+                name: 'তানভীর আহমেদ',
+                phone: '01819-452310',
+                type: 'নতুন সংযোগ',
+                packageName: 'স্মার্ট ফ্যামিলি (25 Mbps - ৳700)',
+                address: 'বাসা-১৪, রোড-২, নাসিরাবাদ হাউজিং, চট্টগ্রাম',
+                note: 'আগামীকাল বিকেলে সংযোগ নিতে চাই',
+                date: 'আজ, ১০:১৫ AM'
+            }
+        ];
+
+        // --- 2. STATE MANAGEMENT (LocalStorage) ---
+        let packages = JSON.parse(localStorage.getItem('sdn_packages')) || DEFAULT_PACKAGES;
+        let areas = JSON.parse(localStorage.getItem('sdn_areas')) || DEFAULT_AREAS;
+        let requests = JSON.parse(localStorage.getItem('sdn_requests')) || DEFAULT_REQUESTS;
+        let currentPkgFilter = 'all';
+
+        function saveToStorage() {
+            localStorage.setItem('sdn_packages', JSON.stringify(packages));
+            localStorage.setItem('sdn_areas', JSON.stringify(areas));
+            localStorage.setItem('sdn_requests', JSON.stringify(requests));
+        }
+
+        // --- 3. RENDER PACKAGES ---
+        function renderPackages() {
+            const grid = document.getElementById('packages-grid');
+            const filtered = currentPkgFilter === 'all' 
+                ? packages 
+                : packages.filter(p => p.category === currentPkgFilter);
+
+            grid.innerHTML = filtered.map(pkg => {
+                const isPopular = pkg.popular;
+                return `
+                <div class="relative rounded-3xl p-7 transition-all duration-300 flex flex-col justify-between ${
+                    isPopular 
+                    ? 'bg-brand-navy text-white shadow-2xl ring-4 ring-brand-amber/70 lg:-translate-y-2' 
+                    : 'bg-white text-slate-800 border border-slate-200/90 shadow-sm hover:shadow-xl'
+                }">
+                    ${isPopular ? `
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-brand-amber text-brand-navy font-bold text-xs tracking-wide shadow">
+                            <i class="fa-solid fa-fire mr-1"></i> সবচেয়ে জনপ্রিয় প্যাকেজ
+                        </div>
+                    ` : ''}
+
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-lg ${
+                                pkg.category === 'corporate' 
+                                ? (isPopular ? 'bg-cyan-500/20 text-cyan-300' : 'bg-cyan-50 text-brand-cyan')
+                                : (isPopular ? 'bg-emerald-500/20 text-emerald-300' : 'bg-teal-50 text-brand-teal')
+                            }">
+                                ${pkg.category === 'corporate' ? 'Corporate' : 'Home Fiber'}
+                            </span>
+                            <span class="font-eng text-xs font-semibold ${isPopular ? 'text-brand-amber' : 'text-slate-500'}">
+                                BDIX: ${pkg.bdix}
+                            </span>
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-2 ${isPopular ? 'text-white' : 'text-brand-navy'}">${pkg.name}</h3>
+                        
+                        <!-- Speed Badge -->
+                        <div class="flex items-baseline gap-2 my-4 pb-4 border-b ${isPopular ? 'border-white/15' : 'border-slate-100'}">
+                            <span class="font-eng text-4xl sm:text-5xl font-extrabold ${isPopular ? 'text-brand-amber' : 'text-brand-teal'}">${pkg.speed}</span>
+                            <span class="font-eng text-lg font-bold ${isPopular ? 'text-slate-300' : 'text-slate-500'}">Mbps</span>
+                            <div class="ml-auto text-right">
+                                <span class="font-eng text-2xl sm:text-3xl font-extrabold ${isPopular ? 'text-white' : 'text-brand-navy'}">৳${pkg.price}</span>
+                                <span class="block text-xs ${isPopular ? 'text-slate-400' : 'text-slate-500'}">/মাস (ভ্যাটসহ)</span>
+                            </div>
+                        </div>
+
+                        <!-- Features List -->
+                        <ul class="space-y-3 text-sm mb-8">
+                            ${(pkg.features || ['আনলিমিটেড হাই-স্পিড ডাটা', `BDIX স্পিড ${pkg.bdix}`, 'বাফারলেস FTP ও Live TV', '২৪/৭ কাস্টমার সাপোর্ট']).map(feat => `
+                                <li class="flex items-center gap-2.5">
+                                    <i class="fa-solid fa-circle-check ${isPopular ? 'text-brand-amber' : 'text-brand-tealLight'}"></i>
+                                    <span class="${isPopular ? 'text-slate-200' : 'text-slate-600'}">${feat}</span>
+                                </li>
+                            `).join('')}
+                        </ul>
+                    </div>
+
+                    <button onclick="openConnectionModal('${pkg.name} (${pkg.speed} Mbps - ৳${pkg.price})')" 
+                        class="w-full py-3.5 rounded-2xl font-bold text-base transition-all flex items-center justify-center gap-2 cursor-pointer ${
+                            isPopular 
+                            ? 'bg-brand-amber hover:bg-brand-amberHover text-brand-navy shadow-lg' 
+                            : 'bg-slate-100 hover:bg-brand-teal text-brand-navy hover:text-white'
+                        }">
+                        <span>সংযোগ নিন</span>
+                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </button>
+                </div>
+                `;
+            }).join('');
+
+            populatePackageDropdowns();
+        }
+
+        function filterPackages(category) {
+            currentPkgFilter = category;
+            document.querySelectorAll('.pkg-filter-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-teal', 'text-white', 'shadow');
+                btn.classList.add('text-slate-700');
+            });
+            const activeBtn = document.getElementById(`filter-${category}`);
+            activeBtn.classList.add('bg-brand-teal', 'text-white', 'shadow');
+            activeBtn.classList.remove('text-slate-700');
+            renderPackages();
+        }
+
+        function populatePackageDropdowns() {
+            const optionsHtml = packages.map(p => 
+                `<option value="${p.name} (${p.speed} Mbps - ৳${p.price})">${p.name} — ${p.speed} Mbps (৳${p.price}/মাস)</option>`
+            ).join('');
+            
+            const mainSelect = document.getElementById('req-package');
+            const modalSelect = document.getElementById('modal-package-select');
+            if (mainSelect) mainSelect.innerHTML = optionsHtml;
+            if (modalSelect) modalSelect.innerHTML = optionsHtml;
+        }
+
+        // --- 4. RENDER & SEARCH COVERAGE AREAS ---
+        function renderCoverage(searchTerm = '') {
+            const grid = document.getElementById('coverage-grid');
+            const countBadge = document.getElementById('active-zone-count');
+            const activeTotal = areas.filter(a => a.active).length;
+            countBadge.textContent = `${activeTotal}টি জোন সক্রিয়`;
+
+            const filtered = areas.filter(area => 
+                area.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
+                area.note.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full p-8 rounded-2xl bg-slate-50 border border-dashed border-slate-300 text-center">
+                        <i class="fa-solid fa-map-pin text-3xl text-slate-400 mb-2"></i>
+                        <p class="font-bold text-slate-700">দুঃখিত, এই নামে কোনো জোন পাওয়া যায়নি</p>
+                        <p class="text-xs text-slate-500 mt-1">তবে আমাদের হটলাইনে কল করে নতুন সংযোগের সম্ভাব্যতা যাচাই করতে পারেন।</p>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = filtered.map(area => `
+                <div class="p-4 rounded-2xl border transition-all ${
+                    area.active 
+                    ? 'bg-slate-50/80 border-slate-200 hover:border-brand-teal/50' 
+                    : 'bg-slate-100/60 border-slate-200 opacity-70'
+                }">
+                    <div class="flex items-center justify-between mb-1.5">
+                        <h4 class="font-bold text-brand-navy text-base">${area.name}</h4>
+                        <span class="w-2.5 h-2.5 rounded-full ${area.active ? 'bg-emerald-500' : 'bg-amber-500'}"></span>
+                    </div>
+                    <p class="text-xs text-slate-500 mb-3 line-clamp-1">${area.note}</p>
+                    <div class="inline-flex items-center gap-1.5 text-[11px] font-bold px-2.5 py-1 rounded-lg ${
+                        area.active 
+                        ? 'bg-emerald-100/80 text-emerald-800' 
+                        : 'bg-amber-100 text-amber-800'
+                    }">
+                        <i class="fa-solid ${area.active ? 'fa-circle-check' : 'fa-clock'}"></i>
+                        <span>${area.active ? 'ফাইবার নেটওয়ার্ক সক্রিয়' : 'সম্প্রসারণ চলছে'}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterAreas() {
+            const val = document.getElementById('area-search-input').value.trim();
+            renderCoverage(val);
+        }
+
+        function checkQuickArea() {
+            const val = document.getElementById('area-search-input').value.trim();
+            const resultBox = document.getElementById('area-check-result');
+            if (!val) {
+                showToast('অনুগ্রহ করে আপনার এলাকার নাম লিখুন', 'warning');
+                return;
+            }
+            const match = areas.find(a => a.name.includes(val) || a.note.includes(val));
+            resultBox.classList.remove('hidden');
+            if (match && match.active) {
+                resultBox.innerHTML = `
+                    <div class="flex items-center justify-between gap-2">
+                        <div>
+                            <p class="font-bold text-emerald-300"><i class="fa-solid fa-circle-check mr-1"></i> অভিনন্দন! ${match.name} এলাকায় সংযোগ চালু আছে।</p>
+                            <p class="text-xs text-slate-200 mt-0.5">আজই আবেদন করলে দ্রুত ইনস্টলেশন পাবেন।</p>
+                        </div>
+                        <button onclick="openConnectionModal('')" class="px-3 py-1.5 rounded-xl bg-brand-amber text-brand-navy font-bold text-xs shrink-0 cursor-pointer">
+                            সংযোগ নিন
+                        </button>
+                    </div>
+                `;
+            } else {
+                resultBox.innerHTML = `
+                    <p class="font-bold text-brand-amber"><i class="fa-solid fa-phone mr-1"></i> "${val}" এলাকার জন্য সরাসরি হটলাইনে কথা বলুন</p>
+                    <p class="text-xs text-slate-200 mt-1">আমাদের টেকনিক্যাল টিম আপনার লোকেশন যাচাই করে সংযোগের ব্যবস্থা করবে।</p>
+                `;
+            }
+        }
+
+        // --- 5. FORM SUBMISSION & MODALS ---
+        function openConnectionModal(selectedPkg) {
+            const modal = document.getElementById('connection-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            if (selectedPkg) {
+                const select = document.getElementById('modal-package-select');
+                select.value = selectedPkg;
+            }
+        }
+
+        function closeConnectionModal() {
+            const modal = document.getElementById('connection-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function handleFormSubmit(event, source) {
+            event.preventDefault();
+            let newReq;
+
+            if (source === 'modal') {
+                newReq = {
+                    id: Date.now(),
+                    name: document.getElementById('modal-name').value.trim(),
+                    phone: document.getElementById('modal-phone').value.trim(),
+                    type: 'নতুন সংযোগ',
+                    packageName: document.getElementById('modal-package-select').value,
+                    address: document.getElementById('modal-address').value.trim(),
+                    note: 'কুইক পপআপ ফর্ম থেকে আবেদন',
+                    date: 'এইমাত্র'
+                };
+                event.target.reset();
+                closeConnectionModal();
+            } else {
+                newReq = {
+                    id: Date.now(),
+                    name: document.getElementById('req-name').value.trim(),
+                    phone: document.getElementById('req-phone').value.trim(),
+                    type: document.getElementById('req-type').value,
+                    packageName: document.getElementById('req-package').value,
+                    address: document.getElementById('req-address').value.trim(),
+                    note: document.getElementById('req-note').value.trim() || 'কোনো নোট নেই',
+                    date: 'এইমাত্র'
+                };
+                event.target.reset();
+            }
+
+            requests.unshift(newReq);
+            saveToStorage();
+            renderAdminPanel();
+            showToast(`ধন্যবাদ ${newReq.name}! আপনার আবেদন সফলভাবে জমা হয়েছে।`, 'success');
+        }
+
+        // --- 6. ADMIN PANEL DEMO LOGIC ---
+        function openAdminModal() {
+            const modal = document.getElementById('admin-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            renderAdminPanel();
+        }
+
+        function closeAdminModal() {
+            const modal = document.getElementById('admin-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function switchAdminTab(tabName) {
+            ['packages', 'coverage', 'requests'].forEach(t => {
+                document.getElementById(`admin-tab-${t}`).classList.add('hidden');
+                const btn = document.getElementById(`tab-btn-${t}`);
+                btn.classList.remove('bg-white', 'text-brand-teal', 'border-t', 'border-x', 'border-slate-200');
+                btn.classList.add('text-slate-600');
+            });
+
+            document.getElementById(`admin-tab-${tabName}`).classList.remove('hidden');
+            const activeBtn = document.getElementById(`tab-btn-${tabName}`);
+            activeBtn.classList.add('bg-white', 'text-brand-teal', 'border-t', 'border-x', 'border-slate-200');
+            activeBtn.classList.remove('text-slate-600');
+        }
+
+        function renderAdminPanel() {
+            // 1. Packages Table
+            const tbody = document.getElementById('admin-pkg-table-body');
+            tbody.innerHTML = packages.map(pkg => `
+                <tr class="hover:bg-slate-50">
+                    <td class="p-3.5 font-bold text-brand-navy">${pkg.name}</td>
+                    <td class="p-3.5 font-eng font-semibold text-brand-teal">${pkg.speed} Mbps</td>
+                    <td class="p-3.5 font-eng font-bold">৳${pkg.price}</td>
+                    <td class="p-3.5 font-eng text-slate-600">${pkg.bdix}</td>
+                    <td class="p-3.5 uppercase font-eng text-xs font-bold text-slate-500">${pkg.category}</td>
+                    <td class="p-3.5 text-right space-x-2">
+                        <button onclick="editAdminPackage(${pkg.id})" class="px-2.5 py-1 rounded-lg bg-cyan-50 text-brand-cyan hover:bg-cyan-100 font-semibold text-xs cursor-pointer">
+                            <i class="fa-solid fa-pen"></i> এডিট
+                        </button>
+                        <button onclick="deleteAdminPackage(${pkg.id})" class="px-2.5 py-1 rounded-lg bg-rose-50 text-rose-600 hover:bg-rose-100 font-semibold text-xs cursor-pointer">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            `).join('');
+
+            // 2. Coverage List
+            const areaList = document.getElementById('admin-area-list');
+            areaList.innerHTML = areas.map(area => `
+                <div class="p-3.5 rounded-xl bg-white border border-slate-200 flex items-center justify-between gap-2">
+                    <div>
+                        <p class="font-bold text-sm text-brand-navy">${area.name}</p>
+                        <p class="text-[11px] text-slate-500">${area.note}</p>
+                    </div>
+                    <button onclick="toggleAdminArea(${area.id})" class="px-3 py-1.5 rounded-lg text-xs font-bold cursor-pointer ${
+                        area.active ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'
+                    }">
+                        ${area.active ? 'সক্রিয়' : 'নিষ্ক্রিয়'}
+                    </button>
+                </div>
+            `).join('');
+
+            // 3. Customer Requests
+            document.getElementById('admin-req-badge').textContent = requests.length;
+            const reqList = document.getElementById('admin-requests-list');
+            if (requests.length === 0) {
+                reqList.innerHTML = `<p class="text-sm text-slate-500 text-center py-6 bg-white rounded-2xl border border-slate-200">এখনো কোনো আবেদন জমা পড়েনি।</p>`;
+            } else {
+                reqList.innerHTML = requests.map(r => `
+                    <div class="p-4 rounded-2xl bg-white border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <div class="space-y-1">
+                            <div class="flex items-center gap-2">
+                                <span class="font-bold text-brand-navy">${r.name}</span>
+                                <span class="font-eng text-xs font-bold px-2.5 py-0.5 rounded-full bg-teal-50 text-brand-teal">${r.phone}</span>
+                                <span class="text-[11px] bg-amber-100 text-amber-900 font-semibold px-2 py-0.5 rounded">${r.type}</span>
+                            </div>
+                            <p class="text-xs font-semibold text-brand-cyan">প্যাকেজ: ${r.packageName}</p>
+                            <p class="text-xs text-slate-600"><i class="fa-solid fa-location-dot text-slate-400 mr-1"></i> ${r.address}</p>
+                            <p class="text-[11px] text-slate-400">নোট: ${r.note} • ${r.date}</p>
+                        </div>
+                        <button onclick="deleteRequest(${r.id})" class="self-start sm:self-center px-3 py-1.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-bold text-xs cursor-pointer">
+                            <i class="fa-solid fa-check mr-1"></i> সম্পন্ন মার্ক করুন
+                        </button>
+                    </div>
+                `).join('');
+            }
+        }
+
+        function saveAdminPackage(e) {
+            e.preventDefault();
+            const editId = document.getElementById('edit-pkg-id').value;
+            const name = document.getElementById('admin-pkg-name').value.trim();
+            const speed = Number(document.getElementById('admin-pkg-speed').value);
+            const price = Number(document.getElementById('admin-pkg-price').value);
+            const bdix = document.getElementById('admin-pkg-bdix').value.trim();
+            const category = document.getElementById('admin-pkg-category').value;
+
+            if (editId) {
+                const idx = packages.findIndex(p => p.id === Number(editId));
+                if (idx > -1) {
+                    packages[idx] = { ...packages[idx], name, speed, price, bdix, category };
+                }
+                showToast('প্যাকেজ সফলভাবে আপডেট হয়েছে!', 'success');
+            } else {
+                packages.push({
+                    id: Date.now(),
+                    name,
+                    speed,
+                    price,
+                    bdix,
+                    category,
+                    popular: false,
+                    features: ['আনলিমিটেড হাই-স্পিড ডাটা', `সুপার ফাস্ট BDIX (${bdix})`, 'বাফারলেস FTP ও Live TV', '২৪/৭ কাস্টমার সাপোর্ট']
+                });
+                showToast('নতুন প্যাকেজ যুক্ত হয়েছে!', 'success');
+            }
+
+            cancelEditPackage();
+            saveToStorage();
+            renderPackages();
+            renderAdminPanel();
+        }
+
+        function editAdminPackage(id) {
+            const pkg = packages.find(p => p.id === id);
+            if (!pkg) return;
+            document.getElementById('edit-pkg-id').value = pkg.id;
+            document.getElementById('admin-pkg-name').value = pkg.name;
+            document.getElementById('admin-pkg-speed').value = pkg.speed;
+            document.getElementById('admin-pkg-price').value = pkg.price;
+            document.getElementById('admin-pkg-bdix').value = pkg.bdix;
+            document.getElementById('admin-pkg-category').value = pkg.category;
+            document.getElementById('cancel-edit-btn').classList.remove('hidden');
+        }
+
+        function cancelEditPackage() {
+            document.getElementById('admin-pkg-form').reset();
+            document.getElementById('edit-pkg-id').value = '';
+            document.getElementById('cancel-edit-btn').classList.add('hidden');
+        }
+
+        function deleteAdminPackage(id) {
+            if (packages.length <= 1) {
+                showToast('অন্তত ১টি প্যাকেজ থাকতে হবে!', 'warning');
+                return;
+            }
+            packages = packages.filter(p => p.id !== id);
+            saveToStorage();
+            renderPackages();
+            renderAdminPanel();
+            showToast('প্যাকেজ মুছে ফেলা হয়েছে।', 'info');
+        }
+
+        function addAdminArea(e) {
+            e.preventDefault();
+            const name = document.getElementById('admin-area-name').value.trim();
+            const note = document.getElementById('admin-area-note').value.trim();
+            areas.push({ id: Date.now(), name, note, active: true });
+            e.target.reset();
+            saveToStorage();
+            renderCoverage();
+            renderAdminPanel();
+            showToast(`${name} কভারেজ তালিকায় যুক্ত হয়েছে!`, 'success');
+        }
+
+        function toggleAdminArea(id) {
+            const area = areas.find(a => a.id === id);
+            if (area) {
+                area.active = !area.active;
+                saveToStorage();
+                renderCoverage();
+                renderAdminPanel();
+            }
+        }
+
+        function deleteRequest(id) {
+            requests = requests.filter(r => r.id !== id);
+            saveToStorage();
+            renderAdminPanel();
+            showToast('আবেদনটি সম্পন্ন হিসেবে তালিকা থেকে সরানো হয়েছে।', 'success');
+        }
+
+        function resetDemoData() {
+            localStorage.removeItem('sdn_packages');
+            localStorage.removeItem('sdn_areas');
+            localStorage.removeItem('sdn_requests');
+            packages = JSON.parse(JSON.stringify(DEFAULT_PACKAGES));
+            areas = JSON.parse(JSON.stringify(DEFAULT_AREAS));
+            requests = JSON.parse(JSON.stringify(DEFAULT_REQUESTS));
+            renderPackages();
+            renderCoverage();
+            renderAdminPanel();
+            showToast('ডেমো ডাটা রিসেট করা হয়েছে!', 'info');
+        }
+
+        // --- 7. UTILITIES (Mobile Menu, Clipboard, Toast) ---
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function copyText(text, label) {
+            const tempInput = document.createElement('input');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast(`${label} (${text}) কপি করা হয়েছে!`, 'success');
+        }
+
+        function showToast(message, type = 'success') {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            
+            const colors = {
+                success: 'bg-brand-navy text-white border-l-4 border-emerald-400',
+                warning: 'bg-brand-navy text-white border-l-4 border-brand-amber',
+                info: 'bg-brand-navy text-white border-l-4 border-brand-cyan'
+            };
+
+            toast.className = `${colors[type] || colors.success} px-4 py-3.5 rounded-2xl shadow-xl text-sm font-medium flex items-center gap-3 pointer-events-auto transition-all`;
+            toast.innerHTML = `
+                <i class="fa-solid ${type === 'warning' ? 'fa-triangle-exclamation text-brand-amber' : 'fa-circle-check text-emerald-400'} text-base"></i>
+                <span>${message}</span>
+            `;
+
+            container.appendChild(toast);
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transform = 'translateY(10px)';
+                setTimeout(() => toast.remove(), 300);
+            }, 3500);
+        }
+
+        // --- 8. INITIALIZE ON LOAD ---
+        window.addEventListener('DOMContentLoaded', () => {
+            renderPackages();
+            renderCoverage();
+            renderAdminPanel();
+        });
+    </script>
+</body>
+</html>
